@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #6a6a6a, #fff);
+}
+
+main {
+    position: relative;
+    display: inline-block;
+    margin-top: 1%;
+}
+
+.pokedex {
+    width:100%;
+    max-width: 425px;
+}
+
+.pokemon-img {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: 18%;
+    top: 30%;
+    left: 35%;
+}
+
+.pokemon-data {
+    position: absolute;
+    width: 75%;
+    font-family: 'Oxanium', cursive;
+    font-size: clamp(8px, 5vw, 25px);
+    /* Evita mudança do tamanho para cada tela de dispositivo */
+    font-weight: 900;
+    bottom: 40%;
+    text-align: right;
+}
+
+.pokemon-number {
+    color: #6a6a6a;
+}
+
+.pokemon-name {
+    color: #3a444d;
+    text-transform: capitalize;
+    font-size: clamp(8px, 5vw, 25px);
+}
+
+.form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 18%;
+    cursor: pointer;
+}
+
+.form:hover {
+    transform: scale(1.05);
+}
+
+.input-search {
+    width: 95%;
+    height: 20%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: 'Oxanium', cursive;
+    font-size: clamp(8px, 5vw, 1rem);
+    color: #3a444d;
+    box-shadow: -2px 2px 0 #888, -4px 5px 0 #292727;
+    /* O 3º parâmetro "0" simboliza a sombra fumaça */
+    cursor: pointer;
+
+}
+
+.buttons {
+    position: absolute;   
+    bottom: 18%;
+    width: 65%;
+    transform: translate(20%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    font-family: 'Oxanium', cursive;
+    font-size: clamp(5px, 5vw, 1rem);
+    font-weight: 700;
+    padding: 4%;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 50%;
+    background-color: #444;
+    box-shadow: -2px 2px #222, -4px 5px #000;
+    cursor: pointer;
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    /* O parâmetro "inset" determina a sombra para dentro do elemento */
+    font-size: 0.9rem;
+}
